@@ -1,0 +1,87 @@
+#main {
+  overflow: hidden;
+  display: block;
+}
+
+.shop {
+  min-height: 45em;
+  display: flex;
+  align-items: stretch;
+  z-index: 1;
+  width: 100vw;
+  background-color: #f0efed;
+  position: relative;
+}
+
+.shop-img {
+  opacity: 1;
+  transition: opacity .25s linear;
+  will-change: opacity;
+  transform: translateZ(0);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: 50% 50%;
+  position: relative;
+}
+
+.shop-cover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+  transition: background-color 0.3s ease-out;
+  box-sizing: border-box;
+  display: block;
+}
+
+.shop-info {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 3;
+  margin: 20px;
+  width: 100%;
+}
+
+.shop-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1, p {
+    color: rgb(239, 194, 179);
+  }
+  
+  h1 {
+    text-transform: uppercase;
+  }
+
+  svg {
+    color: white;
+    height: 50px;
+  }
+}
+
+.shop-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: opacity 500ms linear;
+  box-sizing: border-box;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+  z-index: 2;
+}
+
+.chevron {
+  display: flex;
+}

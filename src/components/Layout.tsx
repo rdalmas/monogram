@@ -4,10 +4,10 @@ import NavBar from './Nav';
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <NavBar />
       <Outlet />
-    </div>
+    </>
   );
 }
 
