@@ -13,6 +13,7 @@ const HomePage = () => {
           <h2>Monogram</h2>
           <h1>Creative Console</h1>
           <h4>Simple. Powerful. Adaptable. A better way to create</h4>
+          <a href='/shop' className='btn'>Shop Now</a>
         </div>
       </div>
     </div>
