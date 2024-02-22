@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { ChevronDown } from 'react-bootstrap-icons';
 
 import ShopImg from '../assets/shop.jpg';
 import './Shop.scss';
+import ProductCard from '../components/Product-Card';
+import { Product } from '../types';
 
 const ShopPage = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3001/api/products')
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+
   return (
     <main id='main'>
       <section className='shop'>
@@ -18,13 +28,17 @@ const ShopPage = () => {
             <h1>A console for every workflow</h1>
             <p>Discover the perfect console for yours.</p>
             <a href='#product-list'>
-              <ChevronDown />
+              <h1>
+                <ChevronDown />
+              </h1>
             </a>
           </div>
         </div>
       </section>
-      <div id='product-list' />
-      <section className='product-list'>
+      <section className='product-list' id='product-list'>
+        {products.map((product: Product) => (
+          <ProductCard key={product.id} {...product} />
+        ))}
       </section>
     </main>
   );
