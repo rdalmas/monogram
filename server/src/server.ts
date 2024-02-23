@@ -1,8 +1,10 @@
 import express from "express";
 import cors from "cors";
 import { PrismaClient } from "@prisma/client";
+import compression from 'compression';
 
 const app = express();
+app.use(compression());
 
 app.use(express.json());
 app.use(cors());
