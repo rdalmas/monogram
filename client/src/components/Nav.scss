@@ -31,9 +31,15 @@
   a {
     color: #efc2b3;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: #ff7952;
   }
 }
 
 .logo {
-  height: 50px;
+  height: 80px;
 }

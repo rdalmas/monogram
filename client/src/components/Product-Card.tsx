@@ -8,6 +8,7 @@ const ProductCard = (productInfo: Product) => {
     <article className='product-card'>
       <a href={`/products/${productInfo.id}`}>
         <header>
+          <div className='product-card-img image-shadow'></div>
           <picture className='product-card-img'>
             <img src={productInfo.image} alt={productInfo.title} />
           </picture>
@@ -17,7 +18,7 @@ const ProductCard = (productInfo: Product) => {
             <h3 className='product-card-title'>{productInfo.title}</h3>
             <h3 className='product-card-price'>{productInfo.price}</h3>
           </div>
-          <p>{productInfo.description}</p>
+          <span>{productInfo.description}</span>
         </footer>
       </a>
     </article>

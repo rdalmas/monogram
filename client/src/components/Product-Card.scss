@@ -21,6 +21,15 @@
     }
   }
 
+  .image-shadow {
+    opacity: 1;
+  }
+
+  .image-shadow:hover {
+    background-color: 0 0 0 0.2;
+    z-index: 1;
+  }
+
   &:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }

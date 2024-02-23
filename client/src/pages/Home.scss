@@ -30,6 +30,10 @@ video {
     font-size: 67.5px;
     margin: 0;
   }
+
+  div h4 {
+    font-weight: 300;
+  }
 }
 
 .overlay {
@@ -64,4 +68,19 @@ video {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly !important;
+}
+
+.video-controls {
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+  border: 1px solid #efc2b3;
+  border-radius: 50rem;
+
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #1a2456;
+  }
 }
