@@ -9,12 +9,12 @@ Currently there are three pages:
 3) Product page with the info for each product
 
 Future Enhancements:
-1) Docker + Kubernetes
-2) Deployment on Heroku
-3) Unit tests
-4) Admin pages with authentication to
+1) Deployment on Heroku
+2) Unit tests
+3) Admin pages with authentication to
   a. Add/Remove/Update products
-5) Shopping cart
+4) Shopping cart
+5) Github pipelines
 
 # Monogram Server
 
@@ -29,8 +29,8 @@ Currently there is one route:
 1) /GET products -> return the list of products
 
 Future enhancements:
-1) Docker + Kubernetes
-2) Deployment on Heroku
-3) Unit tests
-4) New routes for add/remove/update products
-5) New routes for shopping capabilities
+1) Deployment on Heroku
+2) Unit tests
+3) New routes for add/remove/update products
+4) New routes for shopping capabilities
+5) Github pipelines
