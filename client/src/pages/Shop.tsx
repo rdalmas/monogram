@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import { ChevronDown } from 'react-bootstrap-icons';
 
@@ -27,7 +27,7 @@ const ShopPage = () => {
           <div className='shop-text'>
             <h1>A console for every workflow</h1>
             <p>Discover the perfect console for yours.</p>
-            <a href='#product-list'>
+            <a className='product-list-link' href='#product-list'>
               <h1>
                 <ChevronDown />
               </h1>

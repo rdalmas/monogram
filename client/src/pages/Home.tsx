@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Record, RecordFill } from 'react-bootstrap-icons';
 
 import homeVideo1 from '../assets/homeVideo1.mp4';
