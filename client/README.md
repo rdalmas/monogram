@@ -9,9 +9,7 @@ Currently there are three pages:
 3) Product page with the info for each product
 
 Future Enhancements:
-1) Docker + Kubernetes
-2) Deployment on Heroku
-3) Unit tests
-4) Admin pages with authentication to
+1) Deployment
+2) Admin pages with authentication to
   a. Add/Remove/Update products
-5) Shopping cart
+3) Shopping cart

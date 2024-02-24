@@ -11,8 +11,7 @@ Currently there is one route:
 1) /GET products -> return the list of products
 
 Future enhancements:
-1) Docker + Kubernetes
-2) Deployment on Heroku
-3) Unit tests
-4) New routes for add/remove/update products
-5) New routes for shopping capabilities
+1) Deployment
+2) Unit tests
+3) New routes for add/remove/update products
+4) New routes for shopping capabilities
