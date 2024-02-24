@@ -18,8 +18,6 @@ app.use("/api/products", products);
 app.use(errorHandler);
 
 /* SERVER */
-const server = app.listen(3001, () => {
+app.listen(3001, () => {
   console.log("server running on localhost:3001");
 });
-
-export default server;
