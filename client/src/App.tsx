@@ -2,6 +2,7 @@
 
 import React, { Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Loading from './pages/Loading';
 
 const HomePage = React.lazy(() => import('./pages/Home'));
 const Layout = React.lazy(() => import('./components/Layout'));
@@ -11,7 +12,7 @@ const ProductsPage = React.lazy(() => import('./pages/Products'));
 const ProductPage = React.lazy(() => import('./pages/Product'));
 
 const App = () => (
-  <Suspense fallback={<div>Loading...</div>}>
+  <Suspense fallback={<Loading />}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
