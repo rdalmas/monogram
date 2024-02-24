@@ -8,12 +8,14 @@ import products from '../products';
 import prismaClient from '../../../database';
 
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use("/api/products", products);
 const server = app.listen(3001, () => {
   console.log('server running on localhost:3001');
 });
 
-describe('GET /api/product', () => {
+describe('GET /api/products', () => {
   beforeEach(() => {
     mockery.enable({
       warnOnUnregistered: false,
