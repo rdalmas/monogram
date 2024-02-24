@@ -11,5 +11,5 @@ This is a sample website of a store slightly inspired in Monogram website (https
 To run, simply execute the following command in the root folder:
 
 - npm install
-- docker compose -up
+- docker-compose up
 
