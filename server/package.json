@@ -7,6 +7,9 @@
     "start": "npx nodemon",
     "test": "jest"
   },
+  "prisma": {
+    "schema": "app/database/schema.prisma"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
