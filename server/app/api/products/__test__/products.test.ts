@@ -21,7 +21,6 @@ describe('GET /api/products', () => {
   });
   afterAll((done) => {
     mockery.disable();
-    server.close();
     done();
   });
   it('should return 200 OK', async () => {
