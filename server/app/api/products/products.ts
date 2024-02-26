@@ -6,7 +6,7 @@ const router = express.Router();
 
 /* GET PRODUCTS */
 router.get("/", async (req, res, next) => {
-  const products = await prisma.products.findMany().catch((err) => {
+  const products = await prisma.products.findMany().catch((err: Error) => {
     next(err)
   });
 

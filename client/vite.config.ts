@@ -16,6 +16,10 @@ export default defineConfig({
       localsConvention: 'dashesOnly'
     }
   },
+  build: {
+    outDir: './dist',
+    assetsDir: '',
+  },
   server: {
     port: 3000,
     host: true,

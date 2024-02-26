@@ -6,12 +6,13 @@ import ShopImg from '../assets/shop.jpg';
 import './Shop.scss';
 import ProductCard from '../components/Product-Card';
 import { Product } from '../types';
+import { BASE_URL } from '../constants';
 
 const ShopPage = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/products')
+    fetch(`${BASE_URL}/api/products`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -36,7 +37,7 @@ const ShopPage = () => {
         </div>
       </section>
       <section className='product-list' id='product-list'>
-        {products.map((product: Product) => (
+        {products && Array.isArray(products) && products.map((product: Product) => (
           <ProductCard key={product.id} {...product} />
         ))}
       </section>

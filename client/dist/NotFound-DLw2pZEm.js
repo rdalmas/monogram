@@ -1,0 +1,1 @@
+import{j as e,L as o}from"./index-DOh1FyLX.js";const s=()=>e.jsxs("div",{children:[e.jsx("h2",{children:"Nothing to see here!"}),e.jsx("p",{children:e.jsx(o,{to:"/",children:"Go to the home page"})})]});export{s as default};

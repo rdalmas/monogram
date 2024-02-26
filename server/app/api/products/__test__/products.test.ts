@@ -6,8 +6,6 @@ import mockProducts from '../../../__mock__/products.json';
 import server from '../../../server';
 import prismaClient from '../../../database';
 
-
-
 describe('GET /api/products', () => {
   beforeEach(() => {
     mockery.enable({
@@ -21,6 +19,7 @@ describe('GET /api/products', () => {
   });
   afterAll((done) => {
     mockery.disable();
+    server.close();
     done();
   });
   it('should return 200 OK', async () => {
